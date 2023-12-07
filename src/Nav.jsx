@@ -3,7 +3,7 @@ function Nav() {
         <nav>
             <ul>
                 <li><a></a></li>
-                <li></li>
+                <li><a></a></li>
             </ul>
         </nav>
     )
