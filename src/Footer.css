@@ -1,0 +1,38 @@
+.footer {
+    width: 100vw;
+    background-color: #495E57;
+    color: #EDEFEE;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10%;
+    padding: 0 15vw;
+}
+
+.footer-content img {
+    height: 10vw;
+    position: relative;
+    top: calc(50% - 10vw/2);
+    border-radius: 16px;
+}
+
+.footer-content a {
+    color: inherit;
+}
+
+.footer-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+}
+
+.list-footer-item {
+    width: 100px;
+    white-space: nowrap;
+}

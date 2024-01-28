@@ -1,30 +1,80 @@
 import "./Footer.css"
+import logo from "./assets/footer.png"
 
 function Footer() {
+    const menuItems = [
+        {
+            title: "Home",
+            link: "/"
+        },
+        {
+            title: "About",
+            link: "/about"
+        },
+        {
+            title: "Menu",
+            link: "/menu"
+        },
+        {
+            title: "Reservations",
+            link: "/reservation"
+        },
+        {
+            title: "Order online",
+            link: "/oder"
+        },
+        {
+            title: "Login",
+            link: "/login"
+        }
+    ]
+
+    const contacts = [
+        {
+            type: "Address",
+            value: "Little Lemon, 1 Hacker Way, Menlo Park, CA"
+        },
+        {
+            type: "Phone number",
+            value: "+1 650-853-1300"
+        },
+        {
+            type: "Email",
+            value: "restaurant@littlelemon.com"
+        }
+
+    ]
+
     return (
-        <footer>
-            <div>
-                <img></img>
-            </div>
-            <div>
-                <h1>Doormat Navigation</h1>
-                <p>Nam ac tristique velit. Sed interdum rutrum mi eu mattis. Nunc pulvinar commodo mauris nec pretium. Sed vitae tortor tristique, vulputate dui sed, consectetur dui.</p>
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <ul>
-                    <li>adress</li>
-                    <li>Phone Number</li>
-                    <li>Email</li>
-                </ul>
-            </div>
-            <div>
-                <h1>Social Media links</h1>
-                <ul>
-                    <li><a>1</a></li>
-                    <li><a>2</a></li>
-                    <li><a>3</a></li>
-                </ul>
+        <footer className="footer">
+            <div className="footer-content">
+                <div>
+                    <img src={logo}></img>
+                </div>
+                <div>
+                    <h3>Navigation</h3>
+                    <ul className="footer-list">
+                        {menuItems.map((item) =>
+                            <li className='list-footer-item' key={item.title}><a className='footer-anchor' href={item.link}>{item.title}</a></li>
+                        )}
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul className="footer-list">
+                        {contacts.map(
+                            (item) => <li key={item.type}>{item.value}</li>
+                        )}
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social Media</h3>
+                    <ul className="footer-list">
+                        <li><a href="https://facebook.com/littlelemon">Facebook</a></li>
+                        <li><a href="https://instagram.com/littlelemon">Instagram</a></li>
+                        <li><a href="https://twitter.com/littlelemon">Twitter</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     )

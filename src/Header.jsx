@@ -1,7 +1,12 @@
+import "./Header.css"
+import Nav from "./Nav"
+import logo from "./assets/little_lemon.svg"
+
 function Header() {
     return (
-        <header>
-            <img></img>
+        <header className="flex-header"  >
+            <img className="logo" src={logo}></img>
+            <Nav />
         </header>
     )
 }

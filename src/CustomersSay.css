@@ -1,0 +1,44 @@
+.testimonials {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 5vw 15vw;
+    background-color: #FBDABB;
+}
+
+.testimonials-title {
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.testimonials-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #FBDABB;
+}
+
+.testimonial {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 200px;
+    text-align: left;
+    background-color: white;
+    align-items: center;
+    padding: 1vw;
+    margin: 1vw;
+    gap: 1vw;
+}
+
+.testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial_user {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
